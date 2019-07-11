@@ -52,6 +52,11 @@ __0.1.0__
 ## TESTING
  [1. Authentication](#1._Authentication)
 
+ - [1.1 Cross-domain issue solution by  Marshall Thompson](https://gist.github.com/marshallswain/3c9e5b3b177b977468b5b711b6254f67)
+ - [1.2 Cross-domain issue solution by Samson Ssali](https://gist.github.com/jermsam/d45e0ef41391d80d1d79458cc3834997)
+    - [1.2.1 feathers-reduxify-authentication ](https://github.com/eddyystop/feathers-reduxify-authentication)
+    - [1.2.2 feathers-authentication-management.](https://github.com/feathers-plus/feathers-authentication-management)
+
  [2. Massage Service](#2._Massage_Service)
 
 ### 1. Authentication
