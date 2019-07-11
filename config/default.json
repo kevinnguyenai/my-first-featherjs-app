@@ -1,0 +1,42 @@
+{
+  "host": "0.0.0.0",
+  "port": 3001,
+  "https_port": 3000,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "secret": "eab88f33df58e68fb2521975c6a3e230eda60c8f7e3ba046c8bfc0ec5c540003f3ccbb0d488919f4678d15b8a364c8be5ed6a2f288431000b52ecb5e7647ad75ead88e12e3fbabb21d2ff22664c5cf28b19f1ff5db7e6b716de6805151e31558bcf1b7cb0f85805e5eab80356423bed18215325d884ac7f89e083a33b985ba086f249ae2b6851239fa9b4b582e875a64389dc6eaa0414727c7a64659f49c9c6e5cb1a0f54855200d0d5d08efb253e97e15ec2d530a8bb22143ed1689438c1da720fa265caea66dc8438cc768e37e504f06d42d2d3f08b57146cddba1c027fb6303a8aceee7dad2dc35e2b16457e53400a8ed78538e52f907bbeff5c498192fbe",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://www.myfirstfeatherjsapp.tk:30000",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    },
+
+    "cookie": {
+      "enabled": true,
+      "name": "feathers-jwt",
+      "httpOnly": false,
+      "secure": false
+    }
+  },
+  "mongodb": ""
+}
