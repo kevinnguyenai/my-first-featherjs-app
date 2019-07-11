@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Welcome to Feathers</title>
+    <link rel="stylesheet" href="./semantic-dist/semantic.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="vendor/babel-standalone.js"></script>
+    <script src="vendor/react.js"></script>
+    <script src="vendor/react-dom.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+        font-weight: 400;
+        font-size: 16px;
+        color: #333;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      main {
+        margin-top: 0px;
+        padding: 20px;
+      }
+      
+      .container {
+        margin-top: 100px;
+        padding: 20px;
+      }
+
+      img.logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 2em;
+        font-weight: 100;
+      }
+
+      footer {
+        position: absolute;
+        margin-top: 500px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+      }
+
+      footer p {
+        font-weight: 300;
+        font-size: 1.0em;
+      }
+
+      a {
+        color: #31D8A0;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a:focus {
+        color: #31D8A0;
+      }
+      .topnav {
+      overflow: hidden;
+      background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a.active {
+        background-color: #4CAF50;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <script type="text/babel" src="./static/js/client.js"></script>
+      <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="container">
+        <img class="logo" src="./static/images/alien.icon.png", alt="myfirstfeatherjsapp logo">
+        <h2 class="center-text">A REST and realtime API layer for modern applications.</h2>
+        <div class="center-text">
+          <button class="ui icon button" onClick='window.open("/auth/github")'><i aria-hidden="true" class="github icon"></i></button>
+          <button class="ui icon button" onClick='window.open("/auth/facebook")'><i aria-hidden="true" class="facebook icon"></i></button>
+          <button class="ui icon button" onClick='window.open("/auth/google")'><i aria-hidden="true" class="google icon"></i></button>
+        </div>
+      </div>
+        <footer>
+          <p class="center-text">For more information on Feathers see <a  href="https://docs.feathersjs.com" title="Feathers Documentation" target="blank">docs.feathersjs.com</a>.</p>
+          <p class="center-text"><a href="./static/documents/termsfeed-privacy-policy-html-english.html">Privacy Policies</a> - <a href="./static/documents/termsfeed-terms-conditions-html-english.html">Terms and Conditions</a></p>
+        </footer>
+    </main>
+  </body>
+</html>
